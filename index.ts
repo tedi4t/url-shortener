@@ -12,6 +12,11 @@ if (!fs.existsSync(DB_FILE)) fs.writeFileSync(DB_FILE, "");
 const app = express();
 const db = new sqlite3.Database(DB_FILE);
 
+
+
+
+
+
 const PORT = 3000;
 const BASE_URL = `http://localhost:${PORT}`;
 
