@@ -8,6 +8,12 @@ const fs = require("fs");
 const DB_FILE = "urls.db";
 if (!fs.existsSync(DB_FILE)) fs.writeFileSync(DB_FILE, "");
 
+
+
+
+
+
+
 // Initialize Express app
 const app = express();
 const db = new sqlite3.Database(DB_FILE);
