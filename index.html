@@ -22,7 +22,6 @@
     document.getElementById("shortenForm").addEventListener("submit", async (event) => {
       event.preventDefault();
       const url = document.getElementById("urlInput").value;
-      
       const res = await fetch("/shorten", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
